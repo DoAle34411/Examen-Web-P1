@@ -213,6 +213,10 @@ nav{
     margin-right: 15%;
   }
 
+  .rightColumn{
+    margin-top: 5%;
+  }
+
   .subtitleText {
     color: #1BB275;
     font-size: 18px;
@@ -240,3 +244,50 @@ nav{
     font-family: 'Poppins', sans-serif;
     line-height: 1.5;
   }
+
+  .card {
+    position: relative;
+    width: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .card img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 40%;
+    left: 80px;
+    width: 70%;
+    padding: 20px;
+    background-color: #2ea383;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .overlay h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .overlay p {
+    font-size: 18px;
+    line-height: 1.5;
+    color:white;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .icon{
+    padding:0 0 10px 0;
+    text-align: center;
+}
+.icon img {
+    height: 50px;
+    width: 50px;
+}
