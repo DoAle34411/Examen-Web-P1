@@ -12,18 +12,29 @@
     <body>
       <nav>
         <div class="logo">
-          <img src=assets\logo.PNG alt="Logo Image">
+          <img src="assets/logo.PNG" alt="Logo Image">
         </div>
+        
+        <!-- Hidden checkbox for toggling mobile menu -->
+        <input type="checkbox" id="menu-toggle" hidden="true">
+        
+        <!-- Hamburger icon label linked to checkbox -->
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        
+        <!-- Navigation links -->
         <ul class="nav-links">
-          <li>Home</a></li>
-          <li>Services</a></li>
-          <li>Pricing</a></li>
-          <li>Submit Ordr</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Submit Order</a></li>
         </ul>
-        <ul class="nav-button">
-            <li> <button class="join-button" href="#">Try For Free</button></li>
-        </ul>
+        
+        <!-- Join button -->
+        <div class="nav-button">
+          <button class="join-button">Try For Free</button>
+        </div>
       </nav>
+      
       <div class="bannerContainer">
         <div class="blueHalf"></div>
           <div class="imageContainer">
