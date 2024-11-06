@@ -497,7 +497,7 @@ hr{
 .process-container {
   display: flex;
   gap: 20%;
-  align-items: flex-start;
+  align-items: stretch;
   justify-content: center;
 }
 
@@ -576,16 +576,15 @@ hr{
 }
 
 .footer {
-  background-color: #0d1b47;
+  background-color: #102C5B;
   color: #ffffff;
-  padding: 40px 20px;
+  padding: 3% 5% 3% 5%;
   font-family: Arial, sans-serif;
 }
 
 .footer-container {
   display: flex;
   justify-content: space-between;
-  max-width: 1200px;
   margin: 0 auto;
   flex-wrap: wrap;
 }
@@ -597,21 +596,19 @@ hr{
   margin-bottom: 20px;
 }
 
-.footer-logo h1 {
-  color: #00ff89;
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
 .footer-logo p {
   line-height: 1.6;
-  font-size: 14px;
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+  color: white;
 }
 
 /* Quick Links */
 .footer-links h3 {
-  font-size: 18px;
+  font-size: 26px;
   margin-bottom: 10px;
+  font-family: 'Poppins', sans-serif;
+  color: white;
 }
 
 .footer-links ul {
@@ -625,22 +622,22 @@ hr{
 .footer-links ul li a {
   color: #ffffff;
   text-decoration: none;
-  font-size: 14px;
-}
-
-.footer-links ul li a:hover {
-  text-decoration: underline;
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
 }
 
 /* Newsletter Subscription */
 .footer-subscribe h3 {
-  font-size: 18px;
+  font-size: 26px;
   margin-bottom: 10px;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  font-weight: 600;
 }
 
 .subscribe-form {
   display: flex;
-  align-items: center;
+  align-items: stretch;
 }
 
 .subscribe-form input[type="email"] {
@@ -652,15 +649,11 @@ hr{
 }
 
 .subscribe-form button {
-  background-color: #00ff89;
+  background-color: #1BB275;
   border: none;
   padding: 10px 20px;
   border-radius: 0 4px 4px 0;
   cursor: pointer;
-}
-
-.subscribe-form button:hover {
-  background-color: #00e07c;
 }
 
 /* Social Media Icons */
@@ -678,18 +671,18 @@ hr{
 
 /* Footer Bottom */
 .footer-bottom {
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-top: 1px solid #ffffff;
   padding-top: 20px;
   display: flex;
   justify-content: space-between;
-  font-size: 12px;
+  font-size: 16px;
+  font-family: 'Roboto';
 }
 
-.footer-bottom a {
+.footer-bottom p {
   color: #ffffff;
   text-decoration: none;
-}
-
-.footer-bottom a:hover {
-  text-decoration: underline;
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 500;
 }
