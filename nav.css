@@ -94,21 +94,38 @@ nav{
 
 /* Ensuring the image covers the full width of the viewport */
 .imageContainer {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-  overflow: hidden;
-}
+    position: absolute;
+    top: 0;
+    right: 0; /* Align the image to the right side */
+    width: 50%; /* Adjust the width as needed (you can change this value) */
+    height: 100%; /* Make sure it takes the full height */
+    overflow: hidden; /* Prevents image from overflowing */
+  }
 
-.imageStyles {
-  object-fit: cover; /* Ensures the image covers the full area without distorting */
-  object-position: center; /* Keeps the image centered */
-  width: 100%; /* Makes sure the image spans the full width */
-  height: 100%; /* Makes sure the image spans the full height */
-}
+  .blueHalf {
+    background-color: #102C5B; /* The shade of blue */
+    width: 50%; /* Takes up the left half of the screen */
+    height: 100%;
+  }
+  
+  /* Ensure the image fits the container and is aligned to the right */
+  .imageStyles {
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    object-position: right center; /* Align the image to the right */
+    width: 100%; /* Make the image fill the container */
+    height: 100%; /* Make the image fill the container height */
+  }
+
+  .imageOverlay {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(16, 44, 91, 1) 0%, rgba(16, 44, 91, 0) 90%);
+    z-index: 2; /* Make sure the gradient is above the image */
+  }
 
 /* Banner overlay with stronger blue gradient */
 .bannerBefore {
