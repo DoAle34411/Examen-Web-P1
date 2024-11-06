@@ -204,7 +204,7 @@ nav{
     gap: 20px; 
   }
    
-  .leftColumn, .rightColumn {
+  .leftColumn, .rightColumn, .leftColumn2, .rightColumn2 {
     flex: 1; 
   }
   
@@ -215,6 +215,16 @@ nav{
 
   .rightColumn{
     margin-top: 5%;
+  }
+
+  .leftColumn2{
+    margin-top: 5%;
+    margin-left: 15%;
+  }
+
+  .rightColumn2{
+    margin-top: 0%;
+    margin-right: 10%;
   }
 
   .subtitleText {
@@ -278,6 +288,25 @@ nav{
   }
 
   .overlay p {
+    font-size: 18px;
+    line-height: 1.5;
+    color:white;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .overlay2 {
+    position: absolute;
+    top: 70%;
+    left: 80px;
+    width: 70%;
+    padding: 20px;
+    background-color: #102C5B;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .overlay2 p {
     font-size: 18px;
     line-height: 1.5;
     color:white;
@@ -463,4 +492,204 @@ hr{
   align-items: center;
   gap:1%;
   margin-top: 2%;
+}
+
+.process-container {
+  display: flex;
+  gap: 20%;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  text-align: left;
+  max-width: 200px;
+}
+
+.iconProcess {
+  width: 60px;
+  height: 60px;
+  background-color: #00264d;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.iconProcess img {
+  width: 40px;
+  height: 40px;
+}
+
+.processText{
+  color: #102C5B;
+  font-size: 28px;
+  font-family: 'Poppins', sans-serif;
+  text-align: left;
+}
+
+.processBody{
+  color: #000000;
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+  text-align: left;
+  margin-top: 5%;
+}
+
+.cardFormatContainer{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-left: 5%;
+  margin-right: 5%;
+  gap: 1%;
+  align-content: stretch;
+}
+
+.card-format {
+  width: 11%;
+  padding: 20px;
+  background-color: #f5f7fd;
+  border-radius: 8px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 3%;
+}
+
+.card-format img {
+  width: 60px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.card-format .file-type {
+  font-size: 12px;
+  color: #777;
+  margin-top: 10px;
+}
+
+.footer {
+  background-color: #0d1b47;
+  color: #ffffff;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+/* Logo and description */
+.footer-logo, .footer-links, .footer-subscribe {
+  flex: 1;
+  min-width: 200px;
+  margin-bottom: 20px;
+}
+
+.footer-logo h1 {
+  color: #00ff89;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.footer-logo p {
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+/* Quick Links */
+.footer-links h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-links ul {
+  list-style-type: none;
+}
+
+.footer-links ul li {
+  margin: 8px 0;
+}
+
+.footer-links ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-links ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Newsletter Subscription */
+.footer-subscribe h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.subscribe-form {
+  display: flex;
+  align-items: center;
+}
+
+.subscribe-form input[type="email"] {
+  padding: 10px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  font-size: 14px;
+  flex: 1;
+}
+
+.subscribe-form button {
+  background-color: #00ff89;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+.subscribe-form button:hover {
+  background-color: #00e07c;
+}
+
+/* Social Media Icons */
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.social-icons a {
+  color: #ffffff;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+}
+
+.footer-bottom a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-bottom a:hover {
+  text-decoration: underline;
 }
