@@ -45,9 +45,6 @@ nav {
   text-decoration: none;
   margin: 0 0.7vw;
 }
-.nav-links li a:hover {
-  color: #61DAFB;
-}
 
 /* Styling Buttons */
 .nav-button {
@@ -72,13 +69,27 @@ nav {
   font-size: 2rem;
   cursor: pointer;
   margin-left: auto;
+  padding-top: 1rem;
+  padding-right: 3rem; /* Add padding on the right for visibility */
+  z-index: 15; /* Ensure it stays above other elements */
 }
 
 /* Mobile Styling */
 @media (max-width: 768px) {
-  .nav-links, .nav-button {
+  .menu-icon {
+    display: flex;
+    position: relative;
+  }
+
+  .mobile-join-button {
+    display: inline-block; /* Show the button in mobile view */
+  }
+
+  /* Hide the default nav links on mobile */
+  .nav-links {
     display: none;
   }
+
   #menu-toggle:checked + .menu-icon + .nav-links {
     display: flex;
     flex-direction: column;
@@ -89,11 +100,9 @@ nav {
     background-color: #ffffff;
     align-items: center;
   }
+
   .nav-links li {
     margin: 1rem 0;
-  }
-  .menu-icon {
-    display: block;
   }
 }
 
